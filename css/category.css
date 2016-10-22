@@ -1,0 +1,190 @@
+
+@font-face {
+    font-family: folks;
+    src: url("../fonts/Folks-Light.ttf");
+}
+
+
+
+h2{
+	margin-left: 40px;
+	color: white;
+}
+
+
+
+body
+{
+	background: url("../images/bg.png");
+	background-repeat: no-repeat; 
+	background-size: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+#choice1, #choice2, #choice3, #choice4 {
+  opacity:0;  
+  -webkit-animation:fadeIn ease-in 1;  
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards; 
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+
+h1{
+
+	font-size: 
+	font-style:; stroke;
+	float: left;
+	color: white;
+	font-weight: 6px;
+	font-size: 55px;
+	padding-left: 250px;
+	margin-top: -110px;
+	margin-bottom: 0px;
+	font-family: "folks";
+	-webkit-animation-delay: 4.5s;
+  	-moz-animation-delay: 4.5s;
+  	animation-delay: 4.5s;
+}
+
+
+#container {
+ 	
+    margin: auto;
+
+    background-image: url("../images/containerCategory2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   	max-width: 1500px;
+ 	max-height: 900px;
+ 	min-height: 900px;
+ 	min-width: 1000px;
+ 	float: center;
+ 	-webkit-animation-delay: 0.5s;
+  	-moz-animation-delay: 0.5s;
+  	animation-delay: 0.5s;
+  	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    width: /* screen width */ ;
+    height: /* screen height */ ;
+    overflow: scroll;
+ 
+}
+
+
+#Question{
+	color: #abb0bf;
+	font-style: stroke;
+    position: absolute;
+    background-color: transparent;
+	border-radius: 10px;
+	font-family: "folks";
+	font-size: 20px;
+	margin-top: 37px;
+	margin-left: 100px;
+	margin-right: 400px;
+	text-align: center;
+	letter-spacing: 5px
+	overflow: hidden;
+	height: 200px;
+	width: 700px;
+	-webkit-animation-delay: 1.2s;
+  	-moz-animation-delay: 1.2s;
+  	animation-delay: 1.2s;
+}
+
+
+#math{
+	margin-top: 260px;
+	margin-left: 400px;
+	-webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+	
+ }
+
+#science{
+
+	margin-top: 260px;
+	margin-left: 700px;
+	-webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+	
+}
+
+
+#bible{
+
+	margin-top: 330px;
+	margin-left: 343px;
+	webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
+	
+}
+
+
+#technology{
+
+	margin-top: 330px;
+	margin-left: 725px;
+	-webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+
+}
+
+#math, #science, #bible, #technology, #sports, #movies, #astronomy, #wtf, #bonus{
+	
+	
+	background-color: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+	color: white;
+	cursor: pointer;
+	font-family: "folks";
+	font-size: 28px;
+	text-align: center;
+	letter-spacing: 3px;
+	overflow: hidden;
+	padding-top: 20px;
+	position: absolute;
+    text-decoration: none;
+    float: left
+    margin-bottom: -40px;
+    max-width: 315px;
+ 	max-height: 45px;
+ 	min-height: 45px;
+ 	min-width: 315px;
+}
+
+div{
+
+	font-family: "folks";
+}
+
+#choice1:hover, #choice2:hover, #choice3:hover, #choice4:hover{
+
+	background-image: url("../images/choiceSelected.png");
+
+}
+
+#choice1:active, #choice2:active, #choice3:active, #choice4:active{
+
+	background-size: 98%;
+}

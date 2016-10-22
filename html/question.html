@@ -4,12 +4,16 @@
 
 <link rel="stylesheet" type="text/css" href="../css/question.css">
 <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="../css/angular.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+
 <link rel="shortcut icon" href="../images/logo.png">
 	<title>Question</title>
 </head>
 <body> 
 <div id = "spacer"></div>
-<div id="container" class="button animated swing"> 
+<div id="container" class="button animated swing" ng-app="myApp" ng-controller="myCtrl"> 
 <div id = "category">
 	<h1 class="button animated rubberBand"> What the Facts ! </h1>
 </div>
@@ -20,6 +24,26 @@
 <div id="choice2">Ang Dating Daan Chorale</div>
 <div id="choice3">Chicago A Cappella</div>
 <div id="choice4">Philippine Madrigal Singers</div>
+
+
+
+
+First Name: <input ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+<p>{{5+3}}</p>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "John";
+    $scope.lastName= "Doe";
+});
+</script>
 
 </div>
 </body>
