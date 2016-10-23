@@ -1,6 +1,11 @@
 @font-face {
-    font-family: folks;
+    font-family: folk;
     src: url("../font/Folks-Light.ttf");
+}
+
+@font-face {
+    font-family: folks;
+    src: url("../font/Folks-Bold.ttf");
 }
 
 
