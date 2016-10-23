@@ -1,0 +1,245 @@
+/* General */
+    #back{
+        position: absolute;
+        margin-left: 190px;
+        margin-top: -490px;
+        height: 95px;
+        width:  95px;   
+    }
+#close {
+    position: absolute;
+    margin-top: -506px;
+    margin-left: 830px;
+    height: 90px;
+    width:  90px;
+}
+#close:hover{background-image: url("../img/closeHover.png");}
+#close:hover:active{background-image: url("../img/closeClick.png");}
+#back:hover{background-image: url("../img/backHover.png");}
+#back:hover:active{background-image: url("../img/backClick.png");
+}
+
+#background{
+    float: center;
+    margin-top: 40px;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;      
+}
+#bck{
+   
+   background-image: url("../img/bonusGameContainer.png");
+    background-repeat: no-repeat;
+    min-width: 1400px;
+    min-height: 500px;
+    background-size:1100px;
+    padding-left: 0px;
+    padding-top: 50px;
+      
+}
+#text{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 450px;
+    margin-left: 170px;
+    color: white;
+}
+#tularan{
+    width: 100px;
+    height: 100px;
+    margin-left: -20px;
+    margin-top: 200px;
+    position: absolute;
+    border-radius: 5px;
+}
+#image{
+    width: 120px;
+    margin:center;
+    border: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    border-color:gray;
+    position: center;
+}
+p{
+    padding-top: 50px;
+    padding-left: 150px;
+}
+fieldset {
+    
+    padding: 5px;
+    border: 2px solid #ddd;
+    background-color: gray;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: -500px;
+    margin-top: 75px;
+    
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Puzzle widgets */
+
+.sliding-puzzle {
+    border: 1px solid #ccc;
+    border-spacing: 0;
+    
+    
+
+}
+.sliding-puzzle td {
+   
+    
+    border: 2px outset white;
+    cursor: pointer;
+    padding: 0;
+    shape-inside: auto;
+}
+.sliding-puzzle .puzzle-empty {
+    border: none;
+    background-color: #ddd !important;
+}
+.sliding-puzzle.puzzle-solved td {
+    border: none;
+}
+
+.word-search-puzzle {
+    border: 1px solid #999;
+}
+.word-search-puzzle td {
+    background-color: white;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.word-search-puzzle.puzzle-solved td {
+    background-color: #eee;
+}
+.word-search-puzzle td span {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+.word-search-puzzle .puzzle-found {
+    background-color: #eee;
+}
+.word-search-puzzle .puzzle-selected {
+    background-color: #f5f5f5;
+}
+.word-search-puzzle .puzzle-message span {
+    background-color: #ffffcc;
+    color: red;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #444;
+}
+
+
+/* Application */
+
+#types {
+    margin: 0 0 40px 0px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+#types li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 40px;
+}
+#types li a {
+    font-size: 22pt;
+    color: #999;
+}
+#types li.selected {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    -moz-box-shadow: 0 0 5px #999;
+}
+#types li.selected a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#fork {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 149px;
+    height: 149px;
+    background: url('https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png') no-repeat;
+}
+#powered {
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    display: block;
+}
+#powered img {
+    opacity: 0.4;
+    width: 200px;
+}
+
+#sliding-advanced > div {
+    float: left;
+    margin: 0 40px 0 0;
+    min-width: 300px;
+}
+#sliding-advanced .sliding-puzzle {
+    clear: both;
+    margin-top: 30px;
+    
+}
+#sliding-advanced h2 {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+#sliding-advanced .status {
+    float: left;
+    width: 40%;
+    height: 50px;
+}
+#sliding-advanced .size {
+    float: right;
+    height: 50px;
+    text-align: right;
+}
+#sliding-advanced .src input {
+    width: 98%;
+    font-family: "Courier New";
+    margin-bottom: 4px;
+}
+#hint{
+    font-family: Segoe UI Black;
+    font-size: 20px;
+}
+
+#function{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 900px;
+}

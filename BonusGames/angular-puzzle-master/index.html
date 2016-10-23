@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS puzzle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="js/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="js/puzzle/slidingPuzzle.js"></script>
+	<script type="text/javascript" src="js/puzzle/wordSearchPuzzle.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body ng-app="puzzleApp" >	<center>
+<center>
+	
+	<div id="background">
+
+		
+	<ul id="types">
+	
+		<center>
+		<li ng-repeat="t in types" ng-class="{'selected': t.id == type}">
+			<a ng-href="#/{{t.id}}">{{t.title}}</a>
+		</li>
+		</center>
+	
+	</ul>
+
+	</center>
+	<img id="tularan" src="img/angular.png"/>
+	
+	<p id="text">Dodecahedron: a polygon having pentagons on its sides</p>
+	
+	<div ng-include="type" id="bck">
+        <img id="image" src="img/angular.png"/>
+    </div>
+
+	
+ <a href="../../Bonus.html"><div id="back"><img src="img/back.png"></div></a>
+   <a href="../../index.html"><div id="close"><img src="img/close.png"></div></a>
+
+</center>
+
+	<script type="text/ng-template" id="sliding-puzzle">
+		<fieldset id="sliding-simple">
+			<legend>Basic</legend>
+			<sliding-puzzle size="3x3" src="img/angular.png"></sliding-puzzle>
+		</fieldset><br/>
+
+		
+	</script>
+	</div>
+	
+</body>
+</html>

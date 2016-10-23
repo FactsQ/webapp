@@ -1,0 +1,233 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Guess The Movie</title>
+  <meta name="description" content="Guess The Movie Game">
+  <meta name="author" content="Franco Cavestri">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,800' rel='stylesheet' type='text/css'>
+ 
+<style>
+  body{
+  overflow: hidden;
+  background-color: #EAEAEA;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  margin:auto;
+}
+
+#container {
+	position: absolute;
+  width: 510px;
+  height: 400px;
+  position: absolute;
+  margin-left: 440px;
+  margin-top:170px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px #414141;
+
+}
+ #container1{
+  margin:auto;
+  background-image:url("bonusGamecontainer.png");
+  background-repeat: no-repeat;
+  background-size: 1350px;
+  height: 659px;
+  width: 1400px;
+
+   }
+#pic {
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+}
+
+#loader {
+  width: 160px;
+  height: 24px;
+  margin: 125px 165px;
+}
+#back {
+	position: absolute;
+	margin-left: 230px;
+	margin-top: 80px;
+
+}
+#close {
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 1030px;
+
+}
+#close:hover{background-image: url("closeHover.png");}
+#close:hover:active{background-image: url("closeClick.png");}
+#back:hover{background-image: url("backHover.png");}
+#back:hover:active{background-image: url("backClick.png");}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding-top: 3px;
+  position: relative;
+  right: 50%;
+}
+
+#letters {
+  float: left;
+  width: 500px;
+  height: 68px;
+  margin: 5px;
+  background-color: #0C89D8;
+}
+
+#result {
+  float: left;
+  width: 500px;
+  height: 68px;
+  background-color: #04BA19;
+  margin: 0px 5px;
+}
+
+#letters_list {
+  position: relative;
+  float: left;
+  margin-bottom: 10px;
+  left: 42%;
+}
+
+#result_list {
+  position: relative;
+  float: left;
+  margin-top: 15px;
+  left: 42%;
+}
+
+
+#letters_list li {
+  background-color: #087AC2;
+  margin: 5px;
+  box-shadow: inset 0 0 1px #111111;
+}
+
+#result_list li {
+  background-color: #26BE38;
+  margin: 0px;
+  box-shadow: inset 0 0 1px #111111;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline;
+}
+
+#next {
+  position: absolute;
+  margin-top: 100px;
+  padding: 10px;
+  background-color: #FFC000;
+  text-transform: uppercase;
+  color: #FFFFFF;	
+  margin-left: 440px;
+  cursor: pointer;
+}
+
+#logo {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#copy {
+  width: 500px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 12px;
+  color: #888888;
+}
+
+#copy a {
+  text-decoration: none;
+  color: #888888;
+}
+
+#error {
+  margin-left: 30px;
+  margin-top: 15px;
+  float: left;
+  color: #FFFFFF;
+}
+
+#success {
+  margin-left: 35px;
+  margin-top: 40px;
+  float: left;
+  color: #FFFFFF;
+  -webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(1, 1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.0;}
+}
+</style>
+
+</head>
+
+<body>
+
+<center>
+<div id="container1">
+ 
+ <a href="../../Bonus.html"><div id="back"><img src="back.png"></div></a>
+   <a href="../../index.html"><div id="close"><img src="close.png"></div></a>
+
+  <div id="container">
+  	<div id="menu">
+      <span id="app"></span>
+      <span id="stage"></span>
+      <span id="points"></span>
+      <span id="movs"></span>
+    </div>
+    <div id="controls">
+      <span id="next" class="hide">Next</span>
+    </div>
+    <div id="pic">
+      <img id="poster" src="">
+      <img id="loader" class="show" src="img/loading.gif" />
+    </div>
+    <div id="letters">
+      <ul id="letters_list">
+      </ul>
+      <div id="success" class="hide">Great! Press next for another movie.</div>
+      <div id="error" class="hide">Error, please reload the page to keep playing!</div>
+    </div>
+    <div id="result">
+      <ul id="result_list">
+      </ul>
+    </div>
+  </div>
+  </div></center>
+  <script src="js/themoviedb.min.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
