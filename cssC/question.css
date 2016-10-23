@@ -85,9 +85,11 @@ h1{
 	color: #abb0bf;
 }
 
+#lives{
+	margin-top: -5px;
 
 #heart{
-	margin-top: -10px;
+	margin-top: -15px;
 	margin-right: 6px;
 	
 }
@@ -240,7 +242,7 @@ input:after, label:after{
   position: absolute;
  
   margin-left: 790px;
-  margin-top: -10px;
+  margin-top: -20px;
   height: 100px;
   width:  100px;
 }
