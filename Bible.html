@@ -126,7 +126,6 @@ var quiz = [{
       }, 1000);
     }
     timer();
-
     // var life = 3;
     var quesnum = 1;
     var content = $("content"),
@@ -134,20 +133,16 @@ var quiz = [{
       choicesContainer = $("choices"),
       scoreContainer = $("score"),
       submitBtn = $("submit");
-
     // init vars
     var currentQuestion = 0,
       score = 0,
       askingQuestion = true;
-
     function $(id) { // shortcut for document.getElementById
       return document.getElementById(id);
     }
-
     function askQuestion() {
       var choices = quiz[currentQuestion].choices,
         choicesHtml = "";
-
       // loop through choices, and create radio buttons
       for (var i = 0; i < choices.length; i++) {
         choicesHtml += "<input type='radio' name='quiz" + currentQuestion +
@@ -155,14 +150,11 @@ var quiz = [{
           "' value='" + choices[i] + "'>" +
           " <label for='choice" + (i + 1) + "'>" + choices[i] + "</label><br>";
       }
-
       // load the question
       questionContainer.textContent = "Q" + (currentQuestion+1) + ". " +
         quiz[currentQuestion].question;
-
       // load the choices
       choicesContainer.innerHTML = choicesHtml;
-
       // setup for the first time
       if (currentQuestion === 0) {
         scoreContainer.textContent = "Score: 0 right answers out of " +
@@ -170,13 +162,11 @@ var quiz = [{
         submitBtn.textContent = "Submit Answer";
       }
     }
-
     function checkAnswer() {
       // are we asking a question, or proceeding to next question?
       if (askingQuestion) {
         submitBtn.textContent = "Next Question";
         askingQuestion = false;
-
         // determine which radio button they clicked
         var userpick,
           correctIndex,
@@ -185,13 +175,11 @@ var quiz = [{
           if (radios[i].checked) { // if this radio button is checked
             userpick = radios[i].value;
           }
-
           // get index of correct answer
           if (radios[i].value == quiz[currentQuestion].correct) {
             correctIndex = i;
           }
     }
-
     var labelStyle = document.getElementsByTagName("label")[correctIndex].style;
     labelStyle.fontWeight = "bold";
     if (userpick == quiz[currentQuestion].correct) {
@@ -206,7 +194,6 @@ var quiz = [{
         fail();
       }
     }
-
         scoreContainer.textContent = "Score: " + score + " right answers out of " +
           quiz.length + " possible.";
       } else { // move to next question
@@ -223,26 +210,26 @@ var quiz = [{
         }
       }
     }
+ 
     function fail(){
-      content.innerHTML = "<h2>You fail the quiz!<br>Below are your results:</h2><br><br>" 
-          + score + " out of " + quiz.length + " questions, " +
+      content.innerHTML = "<h2>You fail the quiz!</h2>" +
+        "<h2>Below are your results:</h2>" +
+        "<h2>" + score + " out of " + quiz.length + " questions, " +
         Math.round(score / quiz.length * 100) + "%<h2>";
         time = 0;
-
     }
     function showFinalResults() {
-      content.innerHTML = "<h2>You've completed the quiz!</h2><br>Below are your results:</h2> <br><br>"
-          + score + " out of " + quiz.length + " questions, " +
+      content.innerHTML = "<h2>You've completed the quiz!</h2>" +
+        "<h2>Below are your results:</h2>" +
+        "<h2>" + score + " out of " + quiz.length + " questions, " +
         Math.round(score / quiz.length * 100) + "%</h2>";
         time = 0;
         window.alert = function(){
           window.alert = function(text){
-          
+            "andadshkajhd"
           };
         }
     }
-
     window.addEventListener("load", askQuestion, false);
     submitBtn.addEventListener("click", checkAnswer, false);
     </script>
-
