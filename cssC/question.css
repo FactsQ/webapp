@@ -108,6 +108,7 @@ h1{
 
 	float:left;
 	margin-top: 10000px;
+	visibility: hidden;
 
 }
 
@@ -243,7 +244,7 @@ input:after, label:after{
   position: absolute;
  
   margin-left: 790px;
-  margin-top: -40px;
+  margin-top: -50px;
   height: 80px;
   width:  80px;
 }
