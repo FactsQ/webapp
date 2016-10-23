@@ -16,6 +16,20 @@ h2{
 	
 }
 
+#close {
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 790px;
+  height: 100px;
+  width:  100px;
+}
+#close:hover{background-image: url("pic/closeHover.png");}
+#close:hover:active{background-image: url("pic/closeClick.png");}
+
+#music{
+	float: left;
+	visibility: hidden;
+}
 
 
 body
