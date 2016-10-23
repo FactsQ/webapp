@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="robots" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Outter space</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width"> <link rel="stylesheet" href="./Quiz app_files/normalize.min.css">
+    <link rel="stylesheet" href="./Quiz app_files/quiz.css">
+
+<style id="jsbin-css">
+
+    body {
+      font-size: 1em;
+      line-height: 1.4;
+      font-family: Century Gothic;
+      background-image: url("pic/wall.jpg");
+      background-repeat: no-repeat;
+      margin-left: 0px;
+      background-color:gray;
+      background-attachment: fixed;
+      background-size: cover;
+      position: absolute;
+      color: black;
+
+    }
+    #container {
+      margin-left: 380px;
+      max-width: 700px;
+      min-width: 700px;
+      /*max-height: 800;*/
+      height: 800px;
+      padding: 0 15px;
+      background-image: url("pic/color1.jpg");
+      background-repeat: no-repeat;
+      border-radius: 10px;
+    }
+    h1{
+      font-family:Comic Sans MS;
+      font-style: bold;
+    }
+    p{
+      font-family: 'Wawati SC';
+      font-size: 30px;
+    }
+    h3{
+      font-family:Comic Sans MS;
+      font-size: 16pt;
+    }
+    button {
+        background-color: brown;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: Century Gothic;
+        border-radius: 10pt;
+    }
+    .Question{
+      background-color: transparent;
+      opacity: 0.6;
+      border-radius: 10px;
+      /*min-width: 680px;
+      max-width:680px;*/
+      width: 680px;
+      height: 110px;
+      margin:auto;
+      font-family: Chalkduster;
+      color: white;
+      float: center;
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 5px;
+      padding: auto;
+      padding-top: 30px;
+      border-width: 5px;
+      border-style: solid;
+      color:black;
+      overflow: hidden;
+      -webkit-animation-name: rubberBand;
+      animation-name: rubberBand;
+    }
+
+    #span_timer {
+      margin-left: 20px;
+    }
+
+    #heart {
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 50px;
+      color: #ff0600;
+    }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="cateogry.css">
+    </head>
+      <body>
+        <div id="container">
+          <h1>Quiz Game <span style="margin-left: 320px;" >TIMER!<span id="span_timer"></span></span> </h1>
+          <p>
+            Astronomy quiz
+          </p>
+          <div id="content">
+          <h3 id="lives" value = "3"> <span id="heart">&#9829;</span> X3 </h3>
+            <h3 id="question" class="Question">Q1. Who was the legendary Benedictine monk who invented champagne?</h3>
+            <div id="choices">
+            <input type="radio" name="quiz0" id="choice1" value="Internet Provider"> <label for="choice1">Muhammad Ali</label><br>
+            <input type="radio" name="quiz0" id="choice2" value="Internet Port"> <label for="choice2">Mahatman Gandhi</label><br>
+            <input type="radio" name="quiz0" id="choice3" value="Internet Protocol"> <label for="choice3">Dom Perignon</label><br>
+            </div>
+            <p><button id="submit">Submit Answer</button></p>
+            <p id="score">Score: 0 right answers out of 15 possible.</p>
+          </div>
+        </div>
+
+        <script type="text/javascript" async="" src="./Quiz app_files/linkid.js"></script>
+        <script async="" src="./Quiz app_files/analytics.js"></script>
+        <script src="./Quiz app_files/quiz.js"></script>
+      <script>
+    var quiz = [{
+  "question": "What is the only planet in our solar system that doesn’t have moon ?",
+  "choices": ["Pluto ","Mercury", "Jupiter"],
+  "correct": "Mercury"
+}, {
+  "question": "What is the hottest planet in our solar system ?",
+  "choices": ["Mercury", "Venus", "Earth"],
+  "correct": "Venus"
+}, {
+  "question": "How old is our solar system?",
+  "choices": ["1 billion yrs old", "2.9 billion yrs old", "4.6 billion yrs old"],
+  "correct": "4.6 billion yrs old"
+}, {
+  "question": "What is the highest mountain in our solar system ?",
+  "choices": ["Mt.Everest", "Mt.Olympus", "Mt.Enceladus"],
+  "correct": "Mt.Enceladus"
+}, {
+  "question": "What is the celestial object identified being spiral ?",
+  "choices": ["M51", "Kepler 22b", "M-7"],
+  "correct": "M51"
+},{
+  "question": "How many moons jupiter has?",
+  "choices": ["23", "65", "64"],
+  "correct": "64"
+},{
+  "question": "How many days needed for the sun to roatate its own axis?",
+  "choices": ["29-49", "28-38", "25-35"],
+  "correct": "25-35"
+},{
+  "question": "What planet has the most volcanoes ?",
+  "choices": ["Venus", "Mercury", "Jupiter"],
+  "correct": "Venus"
+},{
+  "question": "What planet is gas giant ?",
+  "choices": ["Mars", "Saturn", "Pluto"],
+  "correct": "Saturn"
+},{
+  "question": "In What galaxy do we belong ?",
+  "choices": ["Milky way", "Spiral", "Eliptical"],
+  "correct": "Milky way"
+},{
+  "question": "What is a remain of a star ?",
+  "choices": ["Worm hole", "Black hole", "White hole"],
+  "correct": "Black hole"
+},{
+  "question": "What is the first animal that go to space ?",
+  "choices": ["Mouse", "Monkey", "Dog"],
+  "correct": "Dog"
+},{
+  "question": "Who is the firts man that go to moon?",
+  "choices": ["Neil Armstrong", "Yuri Gagarin", "Max Tenison"],
+  "correct": "Neil Armstrong"
+},{
+  "question": "What is the nationality of the first man in space?",
+  "choices": ["German", "American", "Rushian"],
+  "correct": "Rushian"
+},{
+  "question": "What is the hottest color of a start ?",
+  "choices": ["Redish black", "Bluish white", "Yellowing red"],
+  "correct": "Bluish white"
+}];
+
+
+    // define elements
+    var life =3;
+    var time = 61;
+    var time_container = document.getElementById('span_timer');
+    var heart  = document.getElementById('heart');
+    function timer() { 
+      var timerId = setInterval(function() {
+        //console.log(i);
+        time = time - 1;
+        if(time < 0) {
+          //alert("Times Up!");
+          window.confirm("Times Up!");
+          clearInterval(timerId);
+          heart.style.color = "#000000";
+          fail();
+          time_container.style.color = "transparent";
+        }else if(time < 4) {
+          time_container.style.color = "red"; 
+          time_container.innerHTML = time;
+        }else{
+          time_container.innerHTML = time;
+        }
+      }, 1000);
+    }
+    timer();
+
+    // var life = 3;
+    var quesnum = 1;
+    var content = $("content"),
+      questionContainer = $("question"),
+      choicesContainer = $("choices"),
+      scoreContainer = $("score"),
+      submitBtn = $("submit");
+
+    // init vars
+    var currentQuestion = 0,
+      score = 0,
+      askingQuestion = true;
+
+    function $(id) { // shortcut for document.getElementById
+      return document.getElementById(id);
+    }
+
+    function askQuestion() {
+      var choices = quiz[currentQuestion].choices,
+        choicesHtml = "";
+
+      // loop through choices, and create radio buttons
+      for (var i = 0; i < choices.length; i++) {
+        choicesHtml += "<input type='radio' name='quiz" + currentQuestion +
+          "' id='choice" + (i + 1) +
+          "' value='" + choices[i] + "'>" +
+          " <label for='choice" + (i + 1) + "'>" + choices[i] + "</label><br>";
+      }
+
+      // load the question
+      questionContainer.textContent = "Q" + (currentQuestion+1) + ". " +
+        quiz[currentQuestion].question;
+
+      // load the choices
+      choicesContainer.innerHTML = choicesHtml;
+
+      // setup for the first time
+      if (currentQuestion === 0) {
+        scoreContainer.textContent = "Score: 0 right answers out of " +
+          quiz.length + " possible.";
+        submitBtn.textContent = "Submit Answer";
+      }
+    }
+
+    function checkAnswer() {
+      // are we asking a question, or proceeding to next question?
+      if (askingQuestion) {
+        submitBtn.textContent = "Next Question";
+        askingQuestion = false;
+
+        // determine which radio button they clicked
+        var userpick,
+          correctIndex,
+          radios = document.getElementsByName("quiz" + currentQuestion);
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) { // if this radio button is checked
+            userpick = radios[i].value;
+          }
+
+          // get index of correct answer
+          if (radios[i].value == quiz[currentQuestion].correct) {
+            correctIndex = i;
+          }
+    }
+
+    var labelStyle = document.getElementsByTagName("label")[correctIndex].style;
+    labelStyle.fontWeight = "bold";
+    if (userpick == quiz[currentQuestion].correct) {
+      score++;
+      document.getElementById('lives').innerHTML=('<span id="heart">&#9829;</span> X' +life);
+      labelStyle.color = "green";
+    } else {
+      labelStyle.color = "red";
+      life = life-1;
+      document.getElementById('lives').innerHTML=('<span id="heart">&#9829;</span> X' +life);
+      if (life == 0) {
+        fail();
+      }
+    }
+
+        scoreContainer.textContent = "Score: " + score + " right answers out of " +
+          quiz.length + " possible.";
+      } else { // move to next question
+        // setting up so user can ask a question
+        askingQuestion = true;
+        // change button text back to "Submit Answer"
+        submitBtn.textContent = "Submit Answer";
+        // if we're not on last question, increase question number
+        if (currentQuestion < quiz.length - 1) {
+          currentQuestion++;
+          askQuestion();
+        } else {
+          showFinalResults();
+        }
+      }
+    }
+    function fail(){
+      content.innerHTML = "<h2>You fail the quiz!</h2>" +
+        "<h2>Below are your results:</h2>" +
+        "<h2>" + score + " out of " + quiz.length + " questions, " +
+        Math.round(score / quiz.length * 100) + "%<h2>";
+        time = 0;
+
+    }
+    function showFinalResults() {
+      content.innerHTML = "<h2>You've completed the quiz!</h2>" +
+        "<h2>Below are your results:</h2>" +
+        "<h2>" + score + " out of " + quiz.length + " questions, " +
+        Math.round(score / quiz.length * 100) + "%</h2>";
+        time = 0;
+        window.alert = function(){
+          window.alert = function(text){
+            "andadshkajhd"
+          };
+        }
+    }
+
+    window.addEventListener("load", askQuestion, false);
+    submitBtn.addEventListener("click", checkAnswer, false);
+    </script>
+
+
+
