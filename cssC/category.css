@@ -87,6 +87,7 @@ h1{
   	animation-delay: 0.5s;
  }
 #category{
+	margin: auto;
    	max-width: 500px;
  	max-height: 400px;
  	min-height: 300px;
