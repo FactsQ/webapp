@@ -74,7 +74,6 @@ h1{
 
 #container {
 	margin-top: 70px;
-    	margin: auto;
     	background-image: url("../images/containerCategory2.png");
     	background-repeat: no-repeat;
     	background-size: 100%;
@@ -86,6 +85,10 @@ h1{
   	-moz-animation-delay: 0.5s;
   	animation-delay: 0.5s;
  }
+
+.button{
+	margin-top: 20px;
+}
 #category{
 	margin: auto;
    	max-width: 500px;
