@@ -57,7 +57,7 @@ body
 }
 
 #container {
-	position:absolute;
+	float:center;
 	margin-top: 80px;
     	background-image: url("../images/containerCategory2.png");
     	background-repeat: no-repeat;
@@ -88,11 +88,6 @@ body
  	color: white;
 }
 
-
-div{
-
-	font-family: "folks";
-}
 
 
 
