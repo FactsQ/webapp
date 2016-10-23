@@ -241,7 +241,8 @@ input:after, label:after{
 }
 
 #close {
-  position: absolute;
+  position: fixed;
+  margin-top: -50px;
  
   margin-left: 790px;
  
