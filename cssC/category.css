@@ -33,14 +33,17 @@ body
   -moz-animation:fadeIn ease-in 1;
   animation:fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards; 
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+  	-webkit-animation-fill-mode:forwards; 
+  	-moz-animation-fill-mode:forwards;
+  	animation-fill-mode:forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  	-webkit-animation-duration:1s;
+  	-moz-animation-duration:1s;
+  	animation-duration:1s;
 	
+ 	-webkit-animation-delay: 3s;
+  	-moz-animation-delay: 3s;
+  	animation-delay: 3s;
 	
 	font-family: folks;
 	color: white;
@@ -91,9 +94,7 @@ div{
 	font-family: "folks";
 }
 
--webkit-animation-delay: 2s;
-  	-moz-animation-delay: 2s;
-  	animation-delay: 2s;
+
 
 #science:hover, #technology:hover, #movies:hover, #astronomy:hover, #wtf:hover, #bible:hover, #astronomy, #bonus, #math{
 
