@@ -97,33 +97,8 @@
   "correct": "7"
 }];
 
-
     // define elements
     var life =3;
-    var time = 61;
-    var time_container = document.getElementById('span_timer');
-    var heart  = document.getElementById('heart');
-    function timer() { 
-      var timerId = setInterval(function() {
-        //console.log(i);
-        time = time - 1;
-        if(time < 0) {
-          //alert("Times Up!");
-          clearInterval(timerId);
-          heart.style.color = "#000000";
-          fail();
-          time_container.style.color = "transparent";
-        }else if(time < 4) {
-          time_container.style.color = "red"; 
-          time_container.innerHTML = time;
-        }else{
-          time_container.innerHTML = time;
-        }
-      }, 1000);
-    }
-    timer();
-
-      var life =3;
     var time = 61;
     var time_container = document.getElementById('span_timer');
     var heart  = document.getElementById('heart');
@@ -177,7 +152,8 @@
       }
 
       // load the question
-      questionContainer.textContent = quiz[currentQuestion].question;
+      questionContainer.textContent = "Q" + (currentQuestion+1) + ". " +
+        quiz[currentQuestion].question;
 
       // load the choices
       choicesContainer.innerHTML = choicesHtml;
@@ -203,8 +179,6 @@
         for (var i = 0; i < radios.length; i++) {
           if (radios[i].checked) { // if this radio button is checked
             userpick = radios[i].value;
-          
-
           }
 
           // get index of correct answer
@@ -245,7 +219,8 @@
       }
     }
     function fail(){
-      content.innerHTML = "<h2>You failed the quiz! <br>Below are your results:</h2><br><br>" +
+      content.innerHTML = "<h2>You fail the quiz!</h2>" +
+        "<h2>Below are your results:</h2>" +
         "<h2>" + score + " out of " + quiz.length + " questions, " +
         Math.round(score / quiz.length * 100) + "%<h2>";
         time = 0;
@@ -267,3 +242,4 @@
     window.addEventListener("load", askQuestion, false);
     submitBtn.addEventListener("click", checkAnswer, false);
     </script>
+
