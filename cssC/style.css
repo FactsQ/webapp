@@ -1,3 +1,6 @@
+@media screen and (orientation:landscape) {
+
+
 body{background-image: url("../images/bg.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -46,6 +49,7 @@ body{background-image: url("../images/bg.png");
  #play{
 
  		background-image: url("../images/play.png");
+    margin-top: 50px;
  		-webkit-animation-duration: 0.8s;
 	    -webkit-animation-delay: 3s;
 	    -moz-animation-duration: 0.8s;
@@ -125,8 +129,7 @@ body{background-image: url("../images/bg.png");
 }
 
 
-
-
+}
 
 
  
