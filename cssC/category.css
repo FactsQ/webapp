@@ -50,29 +50,11 @@ body
 	background-color: transparent;
 	border-radius: 10px;
 	
-	margin-left: -5px;
+	
 }
-
-
-h1{
-
-	font-size: 
-	font-style:; stroke;
-	float: left;
-	color: white;
-	font-weight: 6px;
-	font-size: 55px;
-	padding-left: 250px;
-	margin-top: -110px;
-	margin-bottom: 0px;
-	font-family: "folks";
-	-webkit-animation-delay: 4.5s;
-  	-moz-animation-delay: 4.5s;
-  	animation-delay: 4.5s;
-}
-
 
 #container {
+	position:absolute;
 	margin-top: 80px;
     	background-image: url("../images/containerCategory2.png");
     	background-repeat: no-repeat;
@@ -82,9 +64,9 @@ h1{
  	min-height: 500px;
  	min-width: 1000px;
 	margin-left: 140px;
- 	-webkit-animation-delay: 0.5s;
-  	-moz-animation-delay: 0.5s;
-  	animation-delay: 0.5s;
+ 	-webkit-animation-delay: 2s;
+  	-moz-animation-delay: 2s;
+  	animation-delay: 2s;
  }
 
 .button{
@@ -96,7 +78,7 @@ h1{
  	max-height: 400px;
  	min-height: 300px;
  	min-width: 300px;
- 	padding-top: 200px;
+ 	padding-top: 190px;
  	text-align: center;
 	margin-left: 200px;
 
@@ -109,7 +91,11 @@ div{
 	font-family: "folks";
 }
 
-#choice1:hover, #choice2:hover, #choice3:hover, #choice4:hover{
+-webkit-animation-delay: 2s;
+  	-moz-animation-delay: 2s;
+  	animation-delay: 2s;
+
+#science:hover, #technology:hover, #movies:hover, #astronomy:hover, #wtf:hover, #bible:hover, #astronomy, #bonus, #math{
 
 	background-image: url("../images/choiceSelected.png");
 
