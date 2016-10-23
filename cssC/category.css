@@ -1,0 +1,178 @@
+@font-face {
+    font-family: folks;
+    src: url("../fonts/Folks-Light.ttf");
+}
+
+
+
+h2{
+	margin-left: 40px;
+	color: white;
+}
+
+
+
+body
+{
+	background: url("../images/bg.png");
+	background-repeat: no-repeat; 
+	background-size: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+#choice1, #choice2, #choice3, #choice4 {
+  opacity:0;  
+  -webkit-animation:fadeIn ease-in 1;  
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards; 
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+
+h1{
+
+	font-size: 
+	font-style:; stroke;
+	float: left;
+	color: white;
+	font-weight: 6px;
+	font-size: 55px;
+	padding-left: 250px;
+	margin-top: -110px;
+	margin-bottom: 0px;
+	font-family: "folks";
+	-webkit-animation-delay: 4.5s;
+  	-moz-animation-delay: 4.5s;
+  	animation-delay: 4.5s;
+}
+
+
+#container {
+ 	
+    margin: auto;
+    background-image: url("../images/containerCategory2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   	max-width: 1000px;
+ 	max-height: 700px;
+ 	min-height: 500px;
+ 	min-width: 1000px;
+ 	-webkit-animation-delay: 0.5s;
+  	-moz-animation-delay: 0.5s;
+  	animation-delay: 0.5s;
+ }
+#category{
+   	max-width: 500px;
+ 	max-height: 400px;
+ 	min-height: 300px;
+ 	min-width: 300px;
+ 	padding-top: 200px;
+ 	text-align: center;
+ 	padding-left: 250px;
+ 	color: white;
+}
+.button{
+	color: white;
+	font-family: courier new;
+}
+#math{
+	font-family: folks;
+	width: 200px;
+	float: right;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 10px;
+	color: white;
+}
+#science{
+	font-family: folks;
+	color: white;
+	width: 200px;
+	float: left;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+#bonus{
+	font-family: folks;
+	color: white;
+	width: 200px;
+	float: left;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+#movies{
+	 font-family: folks;
+	color: white;
+	width: 200px;
+	float: left;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+#bible{
+	 font-family: folks;
+	color: white;
+	width: 200px;
+	float: right;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 10px;
+}
+#technology{
+	 font-family: folks;
+	color: white;
+	width: 200px;
+	float: left;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 10px;
+}
+#astronomy{
+	font-family: folks;
+	color: white;
+	width: 200px;
+	float: right;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 10px;
+}
+div{
+
+	font-family: "folks";
+}
+
+#choice1:hover, #choice2:hover, #choice3:hover, #choice4:hover{
+
+	background-image: url("../images/choiceSelected.png");
+
+}
+
+#choice1:active, #choice2:active, #choice3:active, #choice4:active{
+
+	background-size: 98%;
+}
