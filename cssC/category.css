@@ -57,26 +57,24 @@ body
 }
 
 #container {
-	
-	margin-top: 80px;
-    	background-image: url("../images/containerCategory2.png");
-    	background-repeat: no-repeat;
-    	margin: auto;
-    	background-size: 100%;
-   	max-width: 900px;
- 	max-height: 650px;
- 	min-height: 650px;
- 	min-width: 900px;
-	margin-left:150px;
- 	padding-top: 80px;
- 	margin-top: 80px;
+ 	
+    margin: auto;
+    background-image: url("../images/containerCategory2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   	max-width: 1000px;
+ 	max-height: 700px;
+ 	min-height: 500px;
+ 	min-width: 1000px;
  	-webkit-animation-delay: 2s;
   	-moz-animation-delay: 2s;
   	animation-delay: 2s;
  }
 
+
 .button{
 	margin-top: 20px;
+	
 }
 #category{
 	margin: auto;
@@ -98,9 +96,4 @@ body
 
 	background-image: url("../images/choiceSelected.png");
 
-}
-
-#choice1:active, #choice2:active, #choice3:active, #choice4:active{
-
-	background-size: 98%;
 }
