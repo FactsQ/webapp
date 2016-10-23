@@ -244,6 +244,7 @@ input:after, label:after{
   position: absolute;
  
   margin-left: 790px;
+  margin-top: 10px;
   height: 100px;
   width:  100px;
 }
