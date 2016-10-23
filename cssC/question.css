@@ -1,10 +1,10 @@
 @font-face {
-    font-family: folk;
+    font-family: folks;
     src: url("../font/Folks-Light.ttf");
 }
 
 @font-face {
-    font-family: folks;
+    font-family: folk;
     src: url("../font/Folks-Bold.ttf");
 }
 
@@ -58,7 +58,7 @@ body
 h1{
 
 	
-	font-style:	 stroke;
+	font-style:stroke;
 	float: left;
 	color: white;
 	font-weight: 6px;
@@ -66,7 +66,7 @@ h1{
 	padding-left: 260px;
 	margin-top: -100px;
 	margin-bottom: -900px;
-	font-family: "folks";
+	font-family: "folk";
 	-webkit-animation-delay: 4.5s;
   	-moz-animation-delay: 4.5s;
   	animation-delay: 4.5s;
