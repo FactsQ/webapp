@@ -1,19 +1,26 @@
 @font-face {
     font-family: folks;
-    src: url("../fonts/Folks-Light.ttf");
+    src: url("../font/Folks-Light.ttf");
 }
 
 
 
 h2{
-	margin-left: 40px;
+	float: center;
+	margin-left: 25px;
 	color: white;
+	font-family: "folks";
+	font-size: 30px;
+	padding-top: 50px;
+	text-align: center;
+	
 }
 
 
 
 body
 {
+	line-height: 2;
 	background: url("../images/bg.png");
 	background-repeat: no-repeat; 
 	background-size: 100%;
@@ -26,7 +33,7 @@ body
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-#choice1, #choice2, #choice3, #choice4 {
+#choice1, #choice2, #choice3, #choice4, #question {
   opacity:0;  
   -webkit-animation:fadeIn ease-in 1;  
   -moz-animation:fadeIn ease-in 1;
@@ -44,20 +51,60 @@ body
 
 h1{
 
-	font-size: 
-	font-style:; stroke;
+	
+	font-style:	 stroke;
 	float: left;
 	color: white;
 	font-weight: 6px;
 	font-size: 55px;
-	padding-left: 250px;
-	margin-top: -110px;
-	margin-bottom: 0px;
+	padding-left: 260px;
+	margin-top: -100px;
+	margin-bottom: -900px;
 	font-family: "folks";
 	-webkit-animation-delay: 4.5s;
   	-moz-animation-delay: 4.5s;
   	animation-delay: 4.5s;
 }
+
+#heart, #lives{
+
+	float: left;
+	padding-left: 76px;
+	padding-top: 15px;
+	font-family: "folks";
+	color: #abb0bf;
+}
+
+#score{
+	font-size: 15px;
+	margin-top: 20px;
+	margin-left: 320px;
+	float: center;
+	color: white;
+	font-family: "folks";
+	color: #abb0bf;
+}
+
+#lives{
+
+	margin-top: -5px;
+}
+
+#heart{
+	margin-top: -15px;
+	margin-right: 6px;
+	
+}
+
+#timming{
+	float: right;	
+	padding-top: 5px;
+	padding-right: 110px;
+	font-family: "folks";
+	font-size: 20px;
+	color: #abb0bf;
+}
+
 
 
 #container {
@@ -66,114 +113,132 @@ h1{
     background-repeat: no-repeat;
     background-size: 100%;
    	max-width: 900px;
- 	max-height: 700px;
- 	min-height: 700px;
+ 	max-height: 650px;
+ 	min-height: 650px;
  	min-width: 900px;
  	float: center;
- 	padding-top: 90px;
- 	margin-top: 115px;
- 	-webkit-animation-delay: 0.5s;
-  	-moz-animation-delay: 0.5s;
-  	animation-delay: 0.5s;
+ 	padding-top: 80px;
+ 	margin-top: 90px;
+
+ 	-webkit-animation-delay: 1s;
+  	-moz-animation-delay: 1s;
+  	animation-delay: 1s;
  
 }
 
 
-#Question{
+#question{
 	color: #abb0bf;
 	font-style: stroke;
     position: absolute;
-    background-color: transparent;
+    background-color: tra;
 	border-radius: 10px;
 	font-family: "folks";
-	font-size: 20px;
-	margin-top: 37px;
-	margin-left: 100px;
+	line-height: 2;
+	font-size: 30px;
+	margin-top: 100px;
+	margin-left: 115px;
+	margin-bottom: -30px;
 	margin-right: 400px;
 	text-align: center;
 	letter-spacing: 5px
 	overflow: hidden;
 	height: 200px;
 	width: 700px;
-	-webkit-animation-delay: 1.2s;
-  	-moz-animation-delay: 1.2s;
-  	animation-delay: 1.2s;
+	-webkit-animation-delay: 1s;
+  	-moz-animation-delay: 1s;
+  	animation-delay: 1s;
 }
 
 
-#choice1{
-	margin-top: 260px;
-	margin-left: 130px;
-	-webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    animation-delay: 2s;
-	
- }
 
-#choice2{
+button {
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "folks";
+    border-radius: 10pt;
+    font-weight: bolder;
+    float: center;
+    padding-top: -10;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 300px;
+    margin-left: 370px;
+    height: 35px;
+}
 
-	margin-top: 260px;
-	margin-left: 470px;
-	-webkit-animation-delay: 2.5s;
-    -moz-animation-delay: 2.5s;
-    animation-delay: 2.5s;
-	
+button:active{
+
+	background-color: gray;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "folks";
+    border-radius: 10pt;
+    font-weight: bolder;
+    float: center;
+    padding-top: -10;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 300px;
+    margin-left: 370px;
+    height: 35px;
+
 }
 
 
-#choice3{
+input[type="radio"]{
 
-	margin-top: 330px;
-	margin-left: 130px;
-	webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    animation-delay: 3s;
-	
-}
-
-
-#choice4{
-
-	margin-top: 330px;
-	margin-left: 470px;
-	-webkit-animation-delay: 3.5s;
-    -moz-animation-delay: 3.5s;
-    animation-delay: 3.5s;
+	visibility: hidden;
 
 }
 
-#choice1, #choice2, #choice3, #choice4{
-	
+
+
+input, label{
 	
 	background-color: transparent;
-    background-image: url("../images/choice.png");
     background-size: 100%;
     background-repeat: no-repeat; 
 	color: white;
 	cursor: pointer;
 	font-family: "folks";
-	font-size: 14px;
+	font-size: 16px;
 	text-align: center;
 	letter-spacing: 3px;
-	overflow: hidden;
-	padding-top: 20px;
+	margin-top: 300px;
 	position: absolute;
     text-decoration: none;
-    float: left
-    margin-bottom: -40px;
+    padding-left: 100px;
+    float: center;
     max-width: 315px;
- 	max-height: 45px;
- 	min-height: 45px;
+ 	max-height: 20px;
+ 	min-height: 20px;
  	min-width: 315px;
 }
 
-#choice1:hover, #choice2:hover, #choice3:hover, #choice4:hover{
+input:hover, label:hover{
 
-	background-image: url("../images/choiceSelected.png");
-
+	font-size: 17px;
 }
 
-#choice1:active, #choice2:active, #choice3:active, #choice4:active{
+input:after, label:after{
 
-	background-size: 98%;
+	color: gray;
 }
+#close {
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 790px;
+  height: 100px;
+  width:  100px;
+}
+#close:hover{background-image: url("pic/closeHover.png");}
+#close:hover:active{background-image: url("pic/closeClick.png");}
