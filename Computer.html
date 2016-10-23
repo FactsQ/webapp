@@ -6,17 +6,16 @@
 
 <meta name="robots" content="noindex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Cpmputer!</title>
+    <title>Technology</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">    
-    <link rel="stylesheet" type="text/css" href="cssC/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="cssC/question.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/question.css">
+    <link rel="shortcut icon" href="images/logo.png">
     </head>
       <body>
         <div id="container" class="animated button zoomIn">
-        <a href="index.html"><div id="close"><img src="pic/close.png"></div></a>
-
-          <h1 class="animated button rubberBand">Technology Quiz ! </h1>
+          <h1 class="animated button rubberBand">Technology Quiz </h1>
           <span id="timming" style="margin-left: 320px;" >TIME: <span id="span_timer"></span></span> 
           <div id="content">
           <h3 id="lives" value = "3"> <span id="heart">&#9829;</span> X3 </h3>
@@ -36,8 +35,8 @@
       <script>
         var quiz = [{
   "question": "What is RED BOOK?",
-  "choices": ["Specification for Digital Audio CD","Specification for Data CD", "Specification for VCD"],
-  "correct": "Specification for Digital Audio CD"
+  "choices": ["Specification for Digital AudioCD","Specification for Data CD", "Specification for VCD"],
+  "correct": "Specification for Digital AudioCD"
 }, {
   "question": "Where is the Headquarters of Intel Located? ",
   "choices": ["Santa Clara, California", "Redmond, Washington ", "Tucson, Arizona"],
@@ -217,7 +216,8 @@
     if (userpick == quiz[currentQuestion].correct) {
       score++;
       document.getElementById('lives').innerHTML=('<span id="heart">&#9829;</span> X' +life);
-      labelStyle.color = "green";
+        labelStyle.color = "green";
+        labelStyle.width = 400;
     } else {
       labelStyle.color = "red";
       life = life-1;
