@@ -22,6 +22,7 @@ body
 	overflow: hidden;
 }
 
+
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -61,11 +62,11 @@ h1{
 
 
 #container {
- 	
-    margin: auto;
-    background-image: url("../images/containerCategory2.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+	margin-top: 70px;
+    	margin: auto;
+    	background-image: url("../images/containerCategory2.png");
+    	background-repeat: no-repeat;
+    	background-size: 100%;
    	max-width: 1000px;
  	max-height: 700px;
  	min-height: 500px;
@@ -151,6 +152,17 @@ h1{
 	border-radius: 10px;
 	margin: 10px;
 }
+#astronomy{
+	font-family: folks;
+	color: white;
+	width: 200px;
+	float: right;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 10px;
+}
+
 #astronomy{
 	font-family: folks;
 	color: white;
