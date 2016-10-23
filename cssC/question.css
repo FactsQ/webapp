@@ -244,8 +244,8 @@ input:after, label:after{
  
   margin-left: 790px;
   margin-top: -20px;
-  height: 100px;
-  width:  100px;
+  height: 80px;
+  width:  80px;
 }
 #close:hover{background-image: url("pic/closeHover.png");}
 #close:hover:active{background-image: url("pic/closeClick.png");}
