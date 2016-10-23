@@ -27,7 +27,7 @@ body
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-#choice1, #choice2, #choice3, #choice4 {
+#science, #technology, #movies, #bonus, #math, #bible, #astronomy, #wtf {
   opacity:0;  
   -webkit-animation:fadeIn ease-in 1;  
   -moz-animation:fadeIn ease-in 1;
@@ -40,6 +40,16 @@ body
   -webkit-animation-duration:1s;
   -moz-animation-duration:1s;
   animation-duration:1s;
+	
+	
+	font-family: folks;
+	color: white;
+	width: 200px;
+	float: right;
+	height: 30px;
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 10px;
 }
 
 
@@ -89,90 +99,7 @@ h1{
 	color: white;
 	font-family: courier new;
 }
-#math{
-	font-family: folks;
-	width: 200px;
-	float: right;
-	height: 30px;
-	background-color: transparent;
-	border-radius: 10px;
-	margin: 10px;
-	color: white;
-}
-#science{
-	font-family: folks;
-	color: white;
-	width: 200px;
-	float: left;
-	height: 30px;
-	background-color: transparent;
-	border-radius: 10px;
-	margin: 10px;
-}
 
-#bonus{
-	font-family: folks;
-	color: white;
-	width: 200px;
-	float: left;
-	height: 30px;
-	background-color: transparent;
-	border-radius: 10px;
-	margin: 10px;
-}
-
-#movies{
-	 font-family: folks;
-	color: white;
-	width: 200px;
-	float: left;
-	height: 30px;
-	background-color: transparent;
-	border-radius: 10px;
-	margin: 10px;
-}
-
-#bible{
-	 font-family: folks;
-	color: white;
-	width: 200px;
-	float: right;
-	height: 30px;
-	background-color: transparent;
-	border-radius: 10px;
-	margin: 10px;
-}
-#technology{
-	 font-family: folks;
-	color: white;
-	width: 200px;
-	float: left;
-	height: 30px;
-	background-color: transparent;
-	border-radius: 10px;
-	margin: 10px;
-}
-#astronomy{
-	font-family: folks;
-	color: white;
-	width: 200px;
-	float: right;
-	height: 30px;
-	background-color: transparent;
-	border-radius: 10px;
-	margin: 10px;
-}
-
-#astronomy{
-	font-family: folks;
-	color: white;
-	width: 200px;
-	float: right;
-	height: 30px;
-	background-color: transparent;
-	border-radius: 10px;
-	margin: 10px;
-}
 div{
 
 	font-family: "folks";
