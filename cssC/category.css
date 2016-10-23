@@ -96,7 +96,7 @@ div{
 
 
 
-#science:hover, #technology:hover, #movies:hover, #astronomy:hover, #wtf:hover, #bible:hover, #astronomy, #bonus, #math{
+#science:hover, #technology:hover, #movies:hover, #astronomy:hover, #wtf:hover, #bible:hover, #astronomy:hover, #bonus:hover, #math:hover{
 
 	background-image: url("../images/choiceSelected.png");
 
