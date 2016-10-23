@@ -52,7 +52,7 @@ body
 h1{
 
 	text-align: center;
-	font-style:	 stroke;
+	font-style: stroke;
 	float: left;
 	color: white;
 	font-weight: 6px;
@@ -117,8 +117,8 @@ h1{
  	min-height: 650px;
  	min-width: 900px;
  	float: center;
- 	padding-top: 80px;
- 	margin-top: 70px;
+ 	padding-top: 60px;
+ 	margin-top: 40px;
 
  	-webkit-animation-delay: 1s;
   	-moz-animation-delay: 1s;
