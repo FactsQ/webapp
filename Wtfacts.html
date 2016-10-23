@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="robots" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>What The Facts!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">    
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/question.css">
+    </head>
+      <body>
+        <div id="container" class="animated button zoomIn">
+          <h1 class="animated button rubberBand">What The Facts ! </h1>
+          <span id="timming" style="margin-left: 320px;" >TIME: <span id="span_timer"></span></span> 
+          <div id="content">
+          <h3 id="lives" value = "3"> <span id="heart">&#9829;</span> X3 </h3>
+            <h3 id="question" class="animated button zoomIn"></h3>
+            <div id="choices">
+  
+      
+            </div>
+            <p><button id="submit">Submit Answer</button></p>
+            <p id="score">Score: 0 right answers out of 15 possible.</p>
+          </div>
+        </div>
+
+   
+
+      
+      <script>
+    var quiz = [{
+      "question": "Who was the legendary Benedictine monk who invented champagne?",
+      "choices": ["Muhammad Ali", " Mahatman Gandhi", "Dom Perignon"],
+      "correct": "Dom Perignon"
+    }, {
+      "question": "Name the largest freshwater lake in the world?",
+      "choices": ["Lake Alabama", "Amazon Lake", "Lake Superior"],
+      "correct": "Lake Superior"
+    }, {
+      "question": "Where would you find the Sea of Tranquility?",
+      "choices": ["Spain", "Ireland", "Moon"],
+      "correct": "Moon"
+    }, {
+      "question": " Who invented the rabies vaccination?",
+      "choices": ["Louis Pasteur", "Benedict Cumberbatch", " Blaise Pascal"],
+      "correct": "Louis Pasteur"
+    }, {
+      "question": "Name the seventh planet from the sun.",
+      "choices": ["Pluto", "Uranus", "Jupiter"],
+      "correct": "Uranus"
+    },{
+      "question": "Name the world's biggest island.",
+      "choices": ["Greenland", "Austria", "Asia"],
+      "correct": "Greenland"
+    },{
+      "question": "What is the diameter of Earth?",
+      "choices": ["8000 miles", "35000 miles", "42000 miles"],
+      "correct": "8000 miles"
+    },{
+      "question": "What is the capital city of Spain?",
+      "choices": ["Barcelona", "Spain", "Madrid"],
+      "correct": "Madrid"
+    },{
+      "question": "What is the painting 'La Gioconda' more usually known as?",
+      "choices": ["The Pandorica is Open", "Mona Lisa", "The Snakes Capital"],
+      "correct": "Mona Lisa"
+    },{
+      "question": "If you were painting with tempera, what would you be using to bind together colour pigments?",
+      "choices": ["Charcoal", "Egg Yolk", "Oil"],
+      "correct": "Egg Yolk"
+    },{
+      "question": "What does the term 'piano' mean?",
+      "choices": ["Play softly", "Play moderate slow", "Play Longer than usual"],
+      "correct": "Play softly"
+    },{
+      "question": "Which Shakespeare play features Shylock?",
+      "choices": ["The Merchant of Venice", "Romeo and Juliet", "Shylock's Adventure"],
+      "correct": "The Merchant of Venice"
+    },{
+      "question": "What is sushi traditionally wrapped in?",
+      "choices": ["Eddible Seaweed", "Black Substance", "Fried Seaweed"],
+      "correct": "Eddible Seaweed"
+    },{
+      "question": "Who was the legendary Benedictine monk who invented champagne?",
+      "choices": ["Philippine Madrigal Singers", "Ang Dating Daan Chorale", "Chicago A Cappella"],
+      "correct": "Ang Dating Daan Chorale"
+    }, {
+      "question": "When was the euro introduced as legal currency on the world market?",
+      "choices": ["January 1, 1999", "December 25, 2005", "January 1, 2000"],
+      "correct": "January 1st, 1999"
+    }];
+
+
+    // define elements
+    var life =3;
+    var time = 61;
+    var time_container = document.getElementById('span_timer');
+    var heart  = document.getElementById('heart');
+    function timer() { 
+      var timerId = setInterval(function() {
+        //console.log(i);
+        time = time - 1;
+        if(time < 0) {
+          //alert("Times Up!");
+          clearInterval(timerId);
+          heart.style.color = "#000000";
+          fail();
+          time_container.style.color = "transparent";
+        }else if(time < 4) {
+          time_container.style.color = "red"; 
+          time_container.innerHTML = time;
+        }else{
+          time_container.innerHTML = time;
+        }
+      }, 1000);
+    }
+    timer();
+
+      var life =3;
+    var time = 61;
+    var time_container = document.getElementById('span_timer');
+    var heart  = document.getElementById('heart');
+    function timer() { 
+      var timerId = setInterval(function() {
+        //console.log(i);
+        time = time - 1;
+        if(time < 0) {
+          //alert("Times Up!");
+          clearInterval(timerId);
+          heart.style.color = "#000000";
+          fail();
+          time_container.style.color = "transparent";
+        }else if(time < 4) {
+          time_container.style.color = "red"; 
+          time_container.innerHTML = time;
+        }else{
+          time_container.innerHTML = time;
+        }
+      }, 1000);
+    }
+    timer();
+
+    // var life = 3;
+    var quesnum = 1;
+    var content = $("content"),
+      questionContainer = $("question"),
+      choicesContainer = $("choices"),
+      scoreContainer = $("score"),
+      submitBtn = $("submit");
+
+    // init vars
+    var currentQuestion = 0,
+      score = 0,
+      askingQuestion = true;
+
+    function $(id) { // shortcut for document.getElementById
+      return document.getElementById(id);
+    }
+
+    function askQuestion() {
+      var choices = quiz[currentQuestion].choices,
+        choicesHtml = "";
+
+      // loop through choices, and create radio buttons
+      for (var i = 0; i < choices.length; i++) {
+        choicesHtml += "<input type='radio' name='quiz" + currentQuestion +
+          "' id='choice" + (i + 1) +
+          "' value='" + choices[i] + "'>" +
+          " <label for='choice" + (i + 1) + "'>" + choices[i] + "</label><br>";
+      }
+
+      // load the question
+      questionContainer.textContent = quiz[currentQuestion].question;
+
+      // load the choices
+      choicesContainer.innerHTML = choicesHtml;
+
+      // setup for the first time
+      if (currentQuestion === 0) {
+        scoreContainer.textContent = "Score: 0 right answers out of " +
+          quiz.length + " possible.";
+        submitBtn.textContent = "Submit Answer";
+      }
+    }
+
+    function checkAnswer() {
+      // are we asking a question, or proceeding to next question?
+      if (askingQuestion) {
+        submitBtn.textContent = "Next Question";
+        askingQuestion = false;
+
+        // determine which radio button they clicked
+        var userpick,
+          correctIndex,
+          radios = document.getElementsByName("quiz" + currentQuestion);
+        for (var i = 0; i < radios.length; i++) {
+          if (radios[i].checked) { // if this radio button is checked
+            userpick = radios[i].value;
+          
+
+          }
+
+          // get index of correct answer
+          if (radios[i].value == quiz[currentQuestion].correct) {
+            correctIndex = i;
+          }
+    }
+
+    var labelStyle = document.getElementsByTagName("label")[correctIndex].style;
+    labelStyle.fontWeight = "bold";
+    if (userpick == quiz[currentQuestion].correct) {
+      score++;
+      document.getElementById('lives').innerHTML=('<span id="heart">&#9829;</span> X' +life);
+      labelStyle.color = "green";
+    } else {
+      labelStyle.color = "red";
+      life = life-1;
+      document.getElementById('lives').innerHTML=('<span id="heart">&#9829;</span> X' +life);
+      if (life == 0) {
+        fail();
+      }
+    }
+
+        scoreContainer.textContent = "Score: " + score + " right answers out of " +
+          quiz.length + " possible.";
+      } else { // move to next question
+        // setting up so user can ask a question
+        askingQuestion = true;
+        // change button text back to "Submit Answer"
+        submitBtn.textContent = "Submit Answer";
+        // if we're not on last question, increase question number
+        if (currentQuestion < quiz.length - 1) {
+          currentQuestion++;
+          askQuestion();
+        } else {
+          showFinalResults();
+        }
+      }
+    }
+    function fail(){
+      content.innerHTML = "<h2>You failed the quiz! <br>Below are your results:</h2><br><br>" +
+        "<h2>" + score + " out of " + quiz.length + " questions, " +
+        Math.round(score / quiz.length * 100) + "%<h2>";
+        time = 0;
+
+    }
+    function showFinalResults() {
+      content.innerHTML = "<h2>You've completed the quiz!</h2>" +
+        "<h2>Below are your results:</h2>" +
+        "<h2>" + score + " out of " + quiz.length + " questions, " +
+        Math.round(score / quiz.length * 100) + "%</h2>";
+        time = 0;
+        window.alert = function(){
+          window.alert = function(text){
+            "andadshkajhd"
+          };
+        }
+    }
+
+    window.addEventListener("load", askQuestion, false);
+    submitBtn.addEventListener("click", checkAnswer, false);
+    </script>
