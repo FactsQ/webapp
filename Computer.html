@@ -6,115 +6,23 @@
 
 <meta name="robots" content="noindex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Computer Quiz</title>
+    <title>Cpmputer!</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width"> <link rel="stylesheet" href="./Quiz app_files/normalize.min.css">
-    <link rel="stylesheet" href="./Quiz app_files/quiz.css">
-
-<style id="jsbin-css">
-
-    body {
-      font-size: 1em;
-      line-height: 1.4;
-      font-family: Century Gothic;
-      background-image: url("pic/wall.jpg");
-      background-repeat: no-repeat;
-      margin-left: 0px;
-      background-color:gray;
-      background-attachment: fixed;
-      background-size: cover;
-      position: absolute;
-      color: black;
-
-    }
-    #container {
-      margin-left: 380px;
-      max-width: 700px;
-      min-width: 700px;
-      /*max-height: 800;*/
-      height: 800px;
-      padding: 0 15px;
-      background-image: url("pic/color1.jpg");
-      background-repeat: no-repeat;
-      border-radius: 10px;
-    }
-    h1{
-      font-family:Comic Sans MS;
-      font-style: bold;
-    }
-    p{
-      font-family: 'Wawati SC';
-      font-size: 30px;
-    }
-    h3{
-      font-family:Comic Sans MS;
-      font-size: 16pt;
-    }
-    button {
-        background-color: brown;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        font-family: Century Gothic;
-        border-radius: 10pt;
-    }
-    .Question{
-      background-color: transparent;
-      opacity: 0.6;
-      border-radius: 10px;
-      /*min-width: 680px;
-      max-width:680px;*/
-      width: 680px;
-      height: 110px;
-      margin:auto;
-      font-family: Chalkduster;
-      color: white;
-      float: center;
-      font-size: 20px;
-      text-align: center;
-      letter-spacing: 5px;
-      padding: auto;
-      padding-top: 30px;
-      border-width: 5px;
-      border-style: solid;
-      color:black;
-      overflow: hidden;
-      -webkit-animation-name: rubberBand;
-      animation-name: rubberBand;
-    }
-
-    #span_timer {
-      margin-left: 20px;
-    }
-
-    #heart {
-      margin-left: 20px;
-      font-weight: bold;
-      font-size: 50px;
-      color: #ff0600;
-    }
-
-    </style>
-    <link rel="stylesheet" type="text/css" href="cateogry.css">
+    <meta name="viewport" content="width=device-width">    
+    <link rel="stylesheet" type="text/css" href="cssC/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="cssC/question.css">
     </head>
       <body>
-        <div id="container">
-          <h1>Quiz Game <span style="margin-left: 320px;" >TIMER!<span id="span_timer"></span></span> </h1>
-          <p>
-          Computer Quiz
-          </p>
+        <div id="container" class="animated button zoomIn">
+        <a href="index.html"><div id="close"><img src="pic/close.png"></div></a>
+
+          <h1 class="animated button rubberBand">Technology Quiz ! </h1>
+          <span id="timming" style="margin-left: 320px;" >TIME: <span id="span_timer"></span></span> 
           <div id="content">
           <h3 id="lives" value = "3"> <span id="heart">&#9829;</span> X3 </h3>
-            <h3 id="question" class="Question">Q1. Who was the legendary Benedictine monk who invented champagne?</h3>
+            <h3 id="question" class="animated button zoomIn"></h3>
             <div id="choices">
-            <input type="radio" name="quiz0" id="choice1" value="Internet Provider"> <label for="choice1">Muhammad Ali</label><br>
-            <input type="radio" name="quiz0" id="choice2" value="Internet Port"> <label for="choice2">Mahatman Gandhi</label><br>
-            <input type="radio" name="quiz0" id="choice3" value="Internet Protocol"> <label for="choice3">Dom Perignon</label><br>
-            <input type="radio" name="quiz0" id="choice4" value="Internet Provider"> <label for="choice4">Specification for Digital and Photo CD</label><br>
+  
       
             </div>
             <p><button id="submit">Submit Answer</button></p>
@@ -122,57 +30,57 @@
           </div>
         </div>
 
-        <script type="text/javascript" async="" src="./Quiz app_files/linkid.js"></script>
-        <script async="" src="./Quiz app_files/analytics.js"></script>
-        <script src="./Quiz app_files/quiz.js"></script>
+   
+
+      
       <script>
-    var quiz = [{
+        var quiz = [{
   "question": "What is RED BOOK?",
-  "choices": ["Specification for Digital Audio CD","Specification for Computer Data CD", "Specification for VCD and Photo CD","Specification for Digital and Photo CD"],
+  "choices": ["Specification for Digital Audio CD","Specification for Data CD", "Specification for VCD"],
   "correct": "Specification for Digital Audio CD"
 }, {
   "question": "Where is the Headquarters of Intel Located? ",
-  "choices": ["Santa Clara, California", "Redmond, Washington ", "Tucson, Arizona","Boston, USA"],
+  "choices": ["Santa Clara, California", "Redmond, Washington ", "Tucson, Arizona"],
   "correct": "Santa Clara, California"
 }, {
   "question": " What is the name of Linux Mascot?",
-  "choices": ["Gerald (a mouse)", "Tux(a penguin)", "Juri (a terix)","Tux(a terix)"],
+  "choices": ["Gerald (a mouse)", "Tux(a penguin)", "Juri (a terix)"],
   "correct": "Tux(a penguin)"
 }, {
   "question": "In what year was the “@” chosen for its use in e-mail?",
-  "choices": ["1999", "1974", "1972","1998"],
+  "choices": ["1999", "1974", "1972"],
   "correct": "1972"
 }, {
   "question": "Quattro Pro, Paradox and Trellix are part of which office suite?",
-  "choices": ["Corel WordPerfect", "Open Office", " Microsoft Office","Windows"],
+  "choices": ["Corel WordPerfect", "Open Office", " Microsoft Office"],
   "correct": "Corel WordPerfect"
 },{
   "question": "What is the Orange book?",
-  "choices": [" Specifications for Computer Data CD ", " Specifications for Digital AudioCD ", "Specifications for CD-R, CD-RW Discs","Specifications for Digital CD"],
+  "choices": [" Specifications for Computer Data CD ", " Specifications for Digital AudioCD ", "Specifications for CD-R, CD-RW Discs"],
   "correct": "Specifications for CD-R, CD-RW Discs"
 },{
   "question": "What is Error 404?",
-  "choices": ["Site Access forbidden", "Bad file request", "Server not found in HTTP","No Connection"],
+  "choices": ["Site Access forbidden", "Bad file request", "Server not found in HTTP"],
   "correct": "Server not found in HTTP"
 },{
   "question": " What is CE, in Windows CE, OS from Microsoft for palmtops? ",
-  "choices": ["Consumer Electronics", " Compact Extension", "Computer Engineering","Consumer Extension"],
+  "choices": ["Consumer Electronics", " Compact Extension", "Computer Engineering"],
   "correct": "Consumer Electronics"
 },{
   "question": " Which Company first manufacture CD’s?",
-  "choices": ["Time-Warner", " Philips", "Yamaha","IBM"],
+  "choices": ["Time-Warner", " Philips", "Yamaha"],
   "correct": " Philips"
 },{
   "question": "It is commonly regarded as the first inexpensive and commercially available computer with GUI and mouse?",
-  "choices": ["Apple Lisa", "IBM PC 268Hz", "Commodore 64","MAC"],
+  "choices": ["Apple Lisa", "IBM PC 268Hz"],
   "correct": "Apple Lisa"
 },{
   "question": "Which company invented the floppy disk?",
-  "choices": ["Microsoft in 1983", "IBM in 1971", "Apple in 1978","Linux in 1999"],
+  "choices": ["Microsoft in 1983", "IBM in 1971", "Apple in 1978"],
   "correct": "IBM in 1971"
 },{
   "question": "TCP port number 80 is usually reserved for?",
-  "choices": ["HTTP", "FTF", "Telnet","HTML"],
+  "choices": ["HTTP", "FTF", "Telnet"],
   "correct": "HTTP"
 },{
   "question": "What does web Server Error Message 500 mean?",
@@ -180,13 +88,14 @@
   "correct": "Internal Error/server-configuration problems"
 },{
   "question": " In which year was the Personal Computer featured as the Times “Man of the year”?",
-  "choices": ["1999", "1998", "1982","1991"],
+  "choices": ["1999", "1998", "1982"],
   "correct": "1982"
 },{
   "question": " What is the White Book?",
-  "choices": ["Specifications for Computer Data CD", "Specification for VCD and Photo CD", "Yellowing red", "Yellowing read"],
+  "choices": ["Specifications for Computer Data CD", "Specification for VCD and Photo CD", "Yellowing red"],
   "correct": "Specification for VCD and Photo CD"
 }];
+
 
     // define elements
     var life =3;
@@ -199,7 +108,30 @@
         time = time - 1;
         if(time < 0) {
           //alert("Times Up!");
-          window.confirm("Times Up!");
+          clearInterval(timerId);
+          heart.style.color = "#000000";
+          fail();
+          time_container.style.color = "transparent";
+        }else if(time < 4) {
+          time_container.style.color = "red"; 
+          time_container.innerHTML = time;
+        }else{
+          time_container.innerHTML = time;
+        }
+      }, 1000);
+    }
+    timer();
+
+      var life =3;
+    var time = 61;
+    var time_container = document.getElementById('span_timer');
+    var heart  = document.getElementById('heart');
+    function timer() { 
+      var timerId = setInterval(function() {
+        //console.log(i);
+        time = time - 1;
+        if(time < 0) {
+          //alert("Times Up!");
           clearInterval(timerId);
           heart.style.color = "#000000";
           fail();
@@ -244,8 +176,7 @@
       }
 
       // load the question
-      questionContainer.textContent = "Q" + (currentQuestion+1) + ". " +
-        quiz[currentQuestion].question;
+      questionContainer.textContent = quiz[currentQuestion].question;
 
       // load the choices
       choicesContainer.innerHTML = choicesHtml;
@@ -271,6 +202,8 @@
         for (var i = 0; i < radios.length; i++) {
           if (radios[i].checked) { // if this radio button is checked
             userpick = radios[i].value;
+          
+
           }
 
           // get index of correct answer
@@ -311,8 +244,7 @@
       }
     }
     function fail(){
-      content.innerHTML = "<h2>You fail the quiz!</h2>" +
-        "<h2>Below are your results:</h2>" +
+      content.innerHTML = "<h2>You failed the quiz! <br>Below are your results:</h2><br><br>" +
         "<h2>" + score + " out of " + quiz.length + " questions, " +
         Math.round(score / quiz.length * 100) + "%<h2>";
         time = 0;
@@ -334,6 +266,3 @@
     window.addEventListener("load", askQuestion, false);
     submitBtn.addEventListener("click", checkAnswer, false);
     </script>
-
-
-
