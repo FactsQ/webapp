@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="quiz" >
+<head>
+  <meta charset="utf-8">
+  <title>Quiz Engine</title>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div ng-controller="QuizController">
+    <ul class="unstyled">
+      <li ng-repeat="question in questions">
+       <strong class="question">{{ question.questionText }}</strong>
+       <ul class="unstyled" id="quest_{{$parent.$index}}"">
+        <li ng-repeat="answer in question.answers">
+          <label class="isCorrect_{{answer.selected}}" for="quest_{{$parent.$index}}_answer_{{$index}}">
+            <input type="radio" id="quest_{{$parent.$index}}_answer_{{$index}}" 
+            ng-model="answers[$parent.$index]" value="{{ answer.answerText }}"  name="quest_{{$parent.$index}}_answers" />{{ answer.answerText }}</label>
+        </li>
+       </ul>
+      </li>
+    </ul>
+    <button class="btn" type="submit" ng:click="showResult()">Submit</button>
+  <div class="well">
+    <p>you got {{ correctCount }} out of {{questions.length}} right</p>
+    
+  </div>
+    
+  </div>
+  
+ </body>
+</html>
