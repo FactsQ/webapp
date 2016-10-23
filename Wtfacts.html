@@ -212,13 +212,13 @@
       }
     }
     function fail(){
-      content.innerHTML = "<h2>You fail the quiz!<br>Below are your results:</h2><br><br>" 
+      content.innerHTML = "<h2>You fail the quiz!<br>Below are your results:</h2><br><br><h2>" 
           + score + " out of " + quiz.length + " questions, " +
         Math.round(score / quiz.length * 100) + "%<h2>";
         time = 0;
     }
     function showFinalResults() {
-      content.innerHTML = "<h2>You've completed the quiz!</h2><br>Below are your results:</h2> <br><br>"
+      content.innerHTML = "<h2>You've completed the quiz!</h2><br>Below are your results:</h2> <br><br><h2>"
           + score + " out of " + quiz.length + " questions, " +
         Math.round(score / quiz.length * 100) + "%</h2>";
         time = 0;
