@@ -1,0 +1,134 @@
+@media screen and (orientation:landscape) {
+
+
+body{background-image: url("../images/bg.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+/* --- alert 
+#alert{
+	background-image: url(".png");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+
+}
+*/
+
+ #container{
+ 	margin: auto;
+ 	background-image: url("../images/container4.png");
+ 	background-repeat: no-repeat;
+ 	max-width: 400px;
+ 	max-height: 900px;
+ 	min-height: 800px;
+ 	min-width: 400px;
+ 	float: center;
+ 	background-size: 400px;
+ }
+
+ 
+ #play, #howtoplay, #settings {
+ 	padding-right: 100px;
+ 	padding-bottom: 10px;
+  	margin: auto;
+ 	float: center;
+ 	max-width: 90px;
+ 	max-height: 50px;
+ 	background-attachment: inherit;
+ 	background-size: 100%;
+ 	background-repeat: no-repeat;
+ 	height: 50px;
+ 	width: 95px;
+ 	
+ }
+
+ #play{
+
+ 		background-image: url("../images/play.png");
+ 		-webkit-animation-duration: 0.8s;
+	    -webkit-animation-delay: 3s;
+	    -moz-animation-duration: 0.8s;
+	    -moz-animation-delay: 3s;
+	    -animation-duration: 0.8s;
+	    -animation-delay: 3s;
+ }
+
+ 
+ #howtoplay{
+
+ 	background-image: url("../images/howtoplay.png");
+ 	-webkit-animation-duration: 0.8s;
+    -webkit-animation-delay: 3.2s;
+    -moz-animation-duration: 0.8s;
+    -moz-animation-delay: 3.2s;
+    -animation-duration: 0.8s;
+    -animation-delay: 3.2s; 
+ }
+
+
+ #settings{
+ 	background-image: url("../images/settings.png");
+ 	-webkit-animation-duration: 0.8s;
+    -webkit-animation-delay: 3.4s;
+    -moz-animation-duration: 0.8s;
+    -moz-animation-delay: 3.4s;
+    -animation-duration: 0.8s;
+    -animation-delay: 3.4s; 
+
+ }
+
+ #logo{
+
+ 	float: center;
+ 	padding-top: 91px;
+ 	padding-left: 135px;
+ 	padding-bottom: 50px;
+ }
+
+
+
+ #play:active, #howToPlay:active, #settings:active{
+    padding-right: 100px;
+ 	padding-bottom: 10px;
+  	margin: auto;
+ 	float: center;
+ 	max-width: 90px;
+ 	max-height: 50px;
+ 	background-attachment: inherit;
+ 	background-size: 100%;
+ 	background-repeat: no-repeat;
+ 	height: 50px;
+ 	width: 77px;
+ }
+
+
+ .tada{
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 1s;
+  -animation-duration: 1s;
+  -animation-delay: 1s;
+
+}
+
+.rubberBand{
+
+ -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 2.2s;
+  -animation-duration: 2s;
+  -animation-delay: 2.2s;
+}
+
+
+}
+
+
+ 
