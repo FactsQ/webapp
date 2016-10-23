@@ -73,7 +73,7 @@ h1{
 
 
 #container {
-	margin-top: 70px;
+	margin-top: 50px;
     	background-image: url("../images/containerCategory2.png");
     	background-repeat: no-repeat;
     	background-size: 100%;
@@ -97,7 +97,7 @@ h1{
  	min-width: 300px;
  	padding-top: 200px;
  	text-align: center;
- 	padding-left: 250px;
+ 	padding-left: 200px;
  	color: white;
 }
 
