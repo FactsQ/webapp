@@ -239,9 +239,10 @@ input:after, label:after{
 
 	color: gray;
 }
+
 #close {
   position: absolute;
-  margin-top: -70px;
+  margin-top: -50px;
   margin-left: 790px;
   height: 100px;
   width:  100px;
