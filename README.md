@@ -1,4 +1,4 @@
-![Facts Q](https://github.com/FactsQ/Unorganized-Collabs/blob/master/DesignWAD/Logo.jpg)
+![Facts Q](https://github.com/FactsQ/webapp/blob/master/logo.png)
 
 #DESCRIPTION
 
@@ -6,7 +6,7 @@ It is a quiz game about many facts in the world. It has many topics for differen
 
 #HOW TO PLAY
 
-There are many question in the game, just choose the correct answer for every question, and every correct answer you’ll move to the next question until you reach the end. You have 3 lives every wrong answer your lives will be deducted.You can also play the bonus game ,it has 5 different games to entertan you
+There are many question in the game, just choose the correct answer for every question, and every correct answer you’ll move to the next question until you reach the end. You have 3 lives every wrong answer your lives will be deducted.You can also play the bonus game ,it has 5 different games to entertain you.
 
 #MEMBERS / CONTRIBUTIONS
 
