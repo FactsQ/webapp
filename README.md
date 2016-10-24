@@ -1,5 +1,4 @@
 ![Facts Q](https://github.com/FactsQ/Unorganized-Collabs/blob/master/DesignWAD/Logo.jpg)
-#Facts Q
 
 #DESCRIPTION
 
