@@ -2,30 +2,46 @@
 
 #DESCRIPTION
 
-It is a quiz game about many facts in the world. It has many topics for different questions and it is a game that easy to play because it is user friendly game and created for learning purposes.
+This is the game that will test your wits ! Are you ready to take the quiz?
+
 
 #HOW TO PLAY
 
-There are many question in the game,you will choose the category of yhe quiz you want to take, just choose the correct answer for every question, and every correct answer you’ll move to the next question until you reach the end. You have 3 lives every wrong answer your lives will be deducted,you have 3 minutes to answer all of the questions in the category of your choice.You can also play the bonus game ,it has 5 different games to entertain you.
+In this game, you are challenged to answer those 15 questions per category. 
+ 
+ • You only have 1 minute to answer those questions. So minute to win it !
+ • You have 3 lives per category
+ • Choose the correct answer to maintain those lives
+ • Once your lives are lost, You fail.
+ • Goodluck ! and Enjoy !
+  
+ • There are additional games called bonus games that will entertain you 
 
+ 
+ 
+ 
 #MEMBERS / CONTRIBUTIONS
 
- Pauline Maunes • Back End / Compilation
+ Pauline Maunes • Animation / Back End / Compilation
 
  Carlo Guevarra • Back End / Bonus Game
+
+ Kent Dayrit • Back End / Bonus Game
 
  Ronnel Avila • Back End / Bonus Game
 
  Lenny Llamado • Design / Bonus Game
 
- Sarah Pangan • Design / Bonus Game
-
  Kimberly Orozco • Design / Bonus Game
 
- John Michael Cao • Animation / Sounds Effect / Bonus Game
+ John Michael Cao • Animation / Sounds Effect 
 
- Dan Avery Loayon • Animation / Sounds Effect / Bonus Game
+ Dan Avery Loayon • Animation / Sounds Effect 
 
- Kent Dayrit • Animation / Sounds Effect / Bonus Game
+ Josel Charille De Mesa • Logo / Read Me
 
- Josel Charille De Mesa • Logo / Read Me / Bonus Game
+ Sarah Pangan • Design 
+
+
+
+
