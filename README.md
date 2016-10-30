@@ -1,5 +1,5 @@
 ![Facts Q](https://github.com/FactsQ/Unorganized-Collabs/blob/master/DesignWAD/Logo.jpg)
-![](https://paulinemaunes.github.io/Practice/)
+https://paulinemaunes.github.io/Practice/
 
 #DESCRIPTION
 
